@@ -1,0 +1,42 @@
+{
+	"schemaVersion": 1,
+	"id": "always-show-chat",
+	"version": "${version}",
+	"name": "Always Show Chat",
+	"description": "Always show chat. Press F7 to toggle show/hide.",
+	"authors": [
+		"naaaaagi"
+	],
+	"contact": {
+		"homepage": "",
+		"sources": ""
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/always-show-chat/icon.png",
+	"environment": "client",
+	"entrypoints": {
+		"main": [
+			"naaaaagi.alwaysshowchat.AlwaysShowChat"
+		],
+		"client": [
+			"naaaaagi.alwaysshowchat.AlwaysShowChatClient"
+		]
+	},
+	"mixins": [
+		"always-show-chat.mixins.json",
+		{
+			"config": "always-show-chat.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.21.4",
+		"java": ">=21",
+		"fabric-api": "*",
+		"fabric-key-binding-api-v1": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

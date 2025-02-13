@@ -1,0 +1,11 @@
+{
+	"required": true,
+	"package": "naaaaagi.alwaysshowchat.mixin.client",
+	"compatibilityLevel": "JAVA_21",
+	"client": [
+		"AlwaysShowChatMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}
