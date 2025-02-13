@@ -28,7 +28,7 @@ public class AlwaysShowChatClient implements ClientModInitializer {
 	}
 
 	private void toggleSetting() {
-		System.out.println("toggled!");
+		AlwaysShowChat.LOGGER.info("Toggle Setting!");
 		state = !state;
 	}
 }
